@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.svg">
+    <link rel="stylesheet" href="style.css">
+    <title>Nester Box</title>
+</head>
+<body>
+    <style>
+      
+       .head{text-align: left;}
+
+        
+    </style>
+
+    <img src="logo.svg" class="logo">
+
+    <div class="container">
+    
+    <h3 class="head">Material 1:
+        <select class="rollSelect" id="mat1Roll">
+            <option value="54">54" Roll</option>
+            <option value="48" selected>48" Roll</option>
+            <option value="36">36" Roll</option>
+            <option value="24">24 Roll"</option>
+        </select>
+    
+    </h3>
+
+ <hr>
+
+<label>Width: <input id="f9" type="number" value="0"></label>
+<label>Height: <input id="f10" type="number" value="0"></label>
+<label>Qty: <input id="f27" type="number" value="0"></label>
+
+<label>Width: <input id="f11" type="number" value="0"></label>
+<label>Height: <input id="f12" type="number" value="0"></label>
+<label>Qty: <input id="f28" type="number" value="0"></label>
+
+<label>Width: <input id="f13" type="number" value="0"></label>
+<label>Height: <input id="f14" type="number" value="0"></label>
+<label>Qty: <input id="f29" type="number" value="0"></label>
+
+<label>Width: <input id="f15" type="number" value="0"></label>
+<label>Height: <input id="f16" type="number" value="0"></label>
+<label>Qty: <input id="f30" type="number" value="0"></label>
+
+<label>Width: <input id="f17" type="number" value="0"></label>
+<label>Height: <input id="f18" type="number" value="0"></label>
+<label>Qty: <input id="f31" type="number" value="0"></label>
+
+<div class="space"></div>
+
+   <h3 class="head">Material 2:
+        <select class="rollSelect" id="mat2Roll">
+            <option value="54">54" Roll</option>
+            <option value="48" selected>48" Roll</option>
+            <option value="36">36" Roll</option>
+            <option value="24">24 Roll"</option>
+        </select>
+    
+    </h3>
+
+ <hr>
+ 
+ <label>Width: <input id="g9" type="number" value="0"></label>
+ <label>Height: <input id="g10" type="number" value="0"></label>
+ <label>Qty: <input id="g27" type="number" value="0"></label>
+ 
+ <label>Width: <input id="g11" type="number" value="0"></label>
+ <label>Height: <input id="g12" type="number" value="0"></label>
+ <label>Qty: <input id="g28" type="number" value="0"></label>
+ 
+ <label>Width: <input id="g13" type="number" value="0"></label>
+ <label>Height: <input id="g14" type="number" value="0"></label>
+ <label>Qty: <input id="g29" type="number" value="0"></label>
+ 
+ <label>Width: <input id="g15" type="number" value="0"></label>
+ <label>Height: <input id="g16" type="number" value="0"></label>
+ <label>Qty: <input id="g30" type="number" value="0"></label>
+ 
+ <label>Width: <input id="g17" type="number" value="0"></label>
+ <label>Height: <input id="g18" type="number" value="0"></label>
+ <label>Qty: <input id="g31" type="number" value="0"></label>
+
+ <div class="space"></div>
+
+ <h3 class="head">Material 3:
+      <select class="rollSelect" id="mat3Roll">
+          <option value="54">54" Roll</option>
+          <option value="48" selected>48" Roll</option>
+          <option value="36">36" Roll</option>
+          <option value="24">24 Roll"</option>
+      </select>
+  
+  </h3>
+
+<hr>
+
+<label>Width: <input id="h9" type="number" value="0"></label>
+<label>Height: <input id="h10" type="number" value="0"></label>
+<label>Qty: <input id="h27" type="number" value="0"></label>
+
+<label>Width: <input id="h11" type="number" value="0"></label>
+<label>Height: <input id="h12" type="number" value="0"></label>
+<label>Qty: <input id="h28" type="number" value="0"></label>
+
+<label>Width: <input id="h13" type="number" value="0"></label>
+<label>Height: <input id="h14" type="number" value="0"></label>
+<label>Qty: <input id="h29" type="number" value="0"></label>
+
+<label>Width: <input id="h15" type="number" value="0"></label>
+<label>Height: <input id="h16" type="number" value="0"></label>
+<label>Qty: <input id="h30" type="number" value="0"></label>
+
+<label>Width: <input id="h17" type="number" value="0"></label>
+<label>Height: <input id="h18" type="number" value="0"></label>
+<label>Qty: <input id="h31" type="number" value="0"></label>
+</div>
+
+<button onclick="reset()">RESET</button>
+<button class="button2" onclick="resetRun()">NEST</button>
+
+<p id="warning" class="off">*over 15 different sized pieces per material may result in different results<br>you may need to Nest a few times for best results</p>
+
+<table class="output">
+    <tr>
+        <th>Material 1:</th>
+        <th>Material 2:</th>
+        <th>Material 3:</th>
+    </tr>
+
+    <tr>
+        <td id="mat1best">0"</td>
+        <td id="mat2best">0"</td>
+        <td id="mat3best">0"</td>
+    </tr>
+</table>
+
+
+
+    <script src="Nesting-v16.js"></script>
+
+
+    
+</body>
+</html>
